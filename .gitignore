@@ -55,13 +55,11 @@ lerna-debug.log*
 node_modules/
 bower_components/
 jspm_packages/
+# 受守护安装的临时目录（正常会自动清理，此处兜底）
+.install-staging-*/
+.install-trash-*/
 
-# =========================
-# Lock files
-# =========================
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# Lock files（package-lock.json 等）是版本清单，必须纳入版本管理，请勿忽略
 
 # =========================
 # Build / Cache / Output
