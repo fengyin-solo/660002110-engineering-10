@@ -55,11 +55,14 @@ lerna-debug.log*
 node_modules/
 bower_components/
 jspm_packages/
+# 安装守门员的本地状态（机器本地，不提交）
+.install-manifest.json
+.installing
 
 # =========================
 # Lock files
 # =========================
-package-lock.json
+# package-lock.json 必须提交：锁定依赖版本，保证每台机器装到同一套版本
 yarn.lock
 pnpm-lock.yaml
 
